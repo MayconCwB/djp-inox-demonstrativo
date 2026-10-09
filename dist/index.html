@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121313"><meta name="description" content="Demonstrativo do aplicativo de gestão interna da DJP Inox.">
+  <title>DJP Inox — Demonstrativo</title>
+  <link rel="icon" href="assets/logo.png"><link rel="apple-touch-icon" href="assets/icon-192.png"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="documents.css">
+</head>
+<body>
+  <aside class="sidebar" aria-label="Navegação principal">
+    <a href="#inicio" class="brand"><img src="assets/logo.png" alt="DJP Artefatos de Inox"><span>Gestão interna</span></a>
+    <div class="nav-label">SEU ESPAÇO DE TRABALHO</div>
+    <nav id="nav"></nav>
+    <div class="sidebar-bottom"><span class="avatar">D</span><div><strong>Equipe DJP</strong><small>Ambiente demonstrativo</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="mobile-brand"><img src="assets/logo.png" alt="DJP Inox"></div><div class="breadcrumb">DJP Artefatos de Inox <span>/</span> <strong id="crumb">Visão geral</strong></div><div class="demo-label"><span></span> Demonstração</div><button id="install" class="button small" hidden>Instalar aplicativo</button></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>Dados fictícios para experimentar a proposta. Alterações ficam neste navegador.<button id="reset" class="text-button">Recomeçar demonstração</button></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="doc-dialog"><div class="dialog-header"><strong id="doc-title">Documento</strong><button id="close-dialog" class="icon-button" aria-label="Fechar documento">×</button></div><div id="document"></div><div class="dialog-actions"><button id="download-doc" class="button secondary">Baixar documento</button><button id="share-doc" class="button secondary">Compartilhar</button><button id="print-doc" class="button">Imprimir / salvar PDF</button></div></dialog>
+  <script src="app.js" defer></script>
+</body>
+</html>
